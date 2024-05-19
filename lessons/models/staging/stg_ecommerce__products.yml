@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: stg_ecommerce__products
+    description: "The Look fictitious e-commerce dataset - products table"
+    columns:
+      - name: product_id
+        description: ""
+
+      - name: cost
+        description: "How much the product cost the business to purchase"
+        tests:
+          - not_null
+
+      - name: retail_price
+        description: ""
+
+      - name: department
+        description: ""
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - Men
+                - Women
+
+      - name: brand
+        description: ""
+
+      # - name: category
+      #   description: ""
+
+      # - name: name
+      #   description: ""
+
+      # - name: sku
+      #   description: ""
+
+      # - name: distribution_center_id
+      #   description: ""
