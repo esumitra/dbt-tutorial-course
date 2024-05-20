@@ -4,7 +4,7 @@ models:
   - name: stg_ecommerce__order_items
     description: ""
     columns:
-      - name: id
+      - name: order_item_id
         description: "Line items from orders"
 
       - name: order_id
