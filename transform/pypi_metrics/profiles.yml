@@ -1,0 +1,13 @@
+pypi_metrics: # this needs to match the profile: in your dbt_project.yml file
+  target: dev # The default for any dbt commands
+  outputs:
+    dev:
+      type: duckdb
+      path: dev.duckdb
+      threads: 1
+
+    # You won't use this, but an example of using a different target
+    prod:
+      type: duckdb
+      path: prod.duckdb
+      threads: 4

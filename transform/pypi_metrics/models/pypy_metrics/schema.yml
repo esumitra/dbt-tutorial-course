@@ -1,0 +1,28 @@
+
+version: 2
+
+models:
+  - name: pypi_daily_stats
+    description: "Daily stats for pypi project"
+    columns:
+      - name: load_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: download_date
+        description: Date of download
+      - name: system_name
+        description: "name of target system"
+      - name: system_release
+        description: "release of target system"
+      - name: version
+        description: "version of taget system"
+      - name: project
+        description: "project name for downlaod"
+      - name: country_code
+        description: "Country of download"
+      - name: cpu
+        description: "CPU of target"
+      - name: python_version
+        description: "2-digit python version"
